@@ -1,0 +1,28 @@
+<div class="container">
+  <div class="card">
+    <h1>Good Morning</h1>
+
+    <input 
+      type="text" 
+      placeholder="Enter Name" 
+      [value]="name"
+      (input)="name = $any($event.target).value"
+    />
+
+    <input 
+      type="text" 
+      placeholder="Enter Phone" 
+      [value]="phone"
+      (input)="phone = $any($event.target).value"
+    />
+
+    <input 
+      type="email" 
+      placeholder="Enter Email" 
+      [value]="email"
+      (input)="email = $any($event.target).value"
+    />
+
+    <button (click)="submit()">Submit</button>
+  </div>
+</div>
